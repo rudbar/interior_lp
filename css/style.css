@@ -48,6 +48,10 @@ body {
   color: #262626;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -71,9 +75,11 @@ body {
   color: #507fe1;
   font-family: 'Proxima Nova Semibold', sans-serif;
   background-color: #fff;
+  text-decoration: none;
 }
 
 .button {
+  text-decoration: none;
   border: none;
   text-transform: uppercase;
   padding: 25px 45px;
@@ -470,6 +476,10 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+.catalog {
+  background-color: #f5f6f8;
+}
+
 .catalog-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,11 +521,41 @@ input[type="checkbox"]:checked + label:before {
 
 .catalog__card__tag {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(80, 127, 225, 0.6);
 }
 
 .catalog__card__image {
   display: block;
+}
+
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.catalog__description {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

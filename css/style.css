@@ -154,6 +154,10 @@ img {
   max-width: 100%;
 }
 
+#huy {
+  display: hidden;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -1066,6 +1070,12 @@ input[type="checkbox"]:checked + label:before {
           transform: translateX(200%);
 }
 
+@media (max-width: 768px) {
+  .before-slider-arrows {
+    display: none;
+  }
+}
+
 .reviews {
   background-color: #f5f6f8;
 }
@@ -1113,6 +1123,21 @@ input[type="checkbox"]:checked + label:before {
   height: 10px;
   border: 10px solid transparent;
   border-top: 10px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .reviews-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reviews-slider__text:after {
+    display: none;
+  }
 }
 
 .factory-block {

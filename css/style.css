@@ -385,6 +385,7 @@ input[type="checkbox"]:checked + label:before {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+  z-index: 101;
 }
 
 .menu__nav {
@@ -459,8 +460,17 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 991px) {
+  .menu__link {
+    font-size: 12px;
+  }
   .navbar__mobile, .navbar__landline {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu__link {
+    font-size: 12px;
   }
 }
 
@@ -482,6 +492,7 @@ input[type="checkbox"]:checked + label:before {
   }
   .menu__link {
     margin-bottom: 20px;
+    font-size: 18px;
   }
 }
 

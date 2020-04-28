@@ -38,6 +38,7 @@
     &_active
         transform: translateY(0)
         opacity: 1
+        z-index: 101
     &__nav
         display: flex
         align-items: center
@@ -81,9 +82,16 @@
         color: $text-color-light
         font-size: 14px
 @media (max-width: 991px)
+    .menu
+        &__link
+            font-size: 12px
     .navbar
         &__mobile, &__landline
             display: none
+@media (max-width: 768px)
+    .menu
+        &__link
+            font-size: 12px
 @media (max-width: 576px)
     .logo
         display: none
@@ -95,3 +103,4 @@
             flex-direction: column
         &__link
             margin-bottom: 20px
+            font-size: 18px
